@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+  --sedans-color: hsl(31, 77%, 52%);
+  --suvs-color: hsl(184, 100%, 22%);
+  --luxury-color: hsl(179, 100%, 13%);
+
+  --color-neutral-1: hsl(0, 0%, 100%, 0.75);
+  --color-neutral-2: hsl(0, 0%, 95%);
+
+}
+
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Poppins', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  letter-spacing: .03em;
+
+
+}
+
+body {
+  background-color: var(--color-neutral-2);
+
+  min-width: 220px;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 50px 40px 20px;
+
+}
+
+#mainContainer {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+}
+
+.card {
+  background-color: var(--sedans-color);
+
+  max-width: 350px;
+  min-width: 175px;
+  width: 100%;
+  min-height: 400px;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  padding: 40px 40px 20px;
+ 
+}
+
+.card:first-child {
+  border-radius: 8px 8px 0px 0px;
+  
+}
+
+.card:nth-child(2) {
+  background-color: var(--suvs-color);
+
+}
+
+.card:last-child {
+  background-color: var(--luxury-color);
+  border-radius: 0px 0px 8px 8px;
+
+}
+
+.card .card-img {
+  width: 50px;
+  height: 35px;
+
+  margin-bottom: 30px;
+
+}
+
+.card .car-type {
+  color: var(--color-neutral-2);
+  font-size: 2.2rem;
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  letter-spacing: 0.03rem;
+
+  margin-bottom: 25px;
+  
+}
+
+.card .card-text {
+  color: var(--color-neutral-1);
+  font-size: 0.9rem;
+  letter-spacing: 0.03rem;
+  line-height: 1.5rem;
+  font-family: 'Lexend Deca', sans-serif;
+
+  margin-bottom: 30px;
+
+}
+
+.card .card-button {
+  width: 70%;
+  height: 45px;
+
+  font-size: 0.9rem;
+  letter-spacing: 0.01em;
+
+  border: none;
+  border-radius: 40px;
+
+  margin-bottom: 20px;
+
+}
